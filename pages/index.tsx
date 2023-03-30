@@ -5,6 +5,8 @@ import styles from '@/styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
+const test = process.env.NEXT_PUBLIC_TEST
+
 export default function Home() {
   return (
     <>
@@ -57,6 +59,9 @@ export default function Home() {
               priority
             />
           </div>
+          <p>
+            <code className={styles.code}>NEXT_PUBLIC_TEST</code>:{' '}
+          </p>
         </div>
 
         <div className={styles.grid}>
