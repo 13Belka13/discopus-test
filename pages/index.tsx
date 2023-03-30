@@ -60,7 +60,7 @@ export default function Home() {
             />
           </div>
           <p>
-            <code className={styles.code}>NEXT_PUBLIC_TEST</code>:{' '}
+          <text>{process.env.NEXT_PUBLIC_TEST}</text>
           </p>
         </div>
 
